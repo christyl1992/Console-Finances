@@ -1,3 +1,44 @@
+# Module 4 Project: Console-Finances
+
+## Description
+
+In this challenge I created a programme to analyse the financial records of a company. This included the total months analysed, total income, average change per month, greatest increase in profits and greatest decrease in profits. The project is designed to help businesses easily analyse their finances. 
+
+## Usage
+
+To access the project you need to navigate to the URL and inspect to view the console.
+
+    ```md
+    ![alt text](images/Screenshot 2024-01-02 at 12.29.32.png)
+    ```
+
+## License
+
+MIT Licence 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Unit 4 Challenge: Console Finances
 
 ## Overview

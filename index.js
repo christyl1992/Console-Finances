@@ -92,3 +92,10 @@ var totalItems = finances.length;
 
 console.log("Total months:", totalItems);
 
+var netTotal = 0;
+
+for (var i = 0; i < finances.length; i++) {
+  netTotal += finances[i][1];
+}
+
+console.log("Total:", netTotal);

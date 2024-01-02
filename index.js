@@ -88,9 +88,13 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+
+// Length:
 var totalItems = finances.length;
 
 console.log("Total months:", totalItems);
+
+// Total:
 
 var netTotal = 0;
 
@@ -99,3 +103,18 @@ for (var i = 0; i < finances.length; i++) {
 }
 
 console.log("Total:", netTotal);
+
+
+// Average Change:
+
+var totalChange = 0;
+
+for (var i = 1; i < finances.length; i++) {
+  var change = finances[i][1] - finances[i - 1][1];
+  totalChange += change;
+}
+
+var averageChange = totalChange / (finances.length - 1);
+averageChange = averageChange.toFixed(2)
+
+console.log("Average Change:", averageChange);

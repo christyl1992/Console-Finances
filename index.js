@@ -136,3 +136,19 @@ for (var i = 1; i < finances.length; i++) {
 
 console.log("Greatest Increase in Profits/Losses:", greatestIncreaseMonth, greatestIncrease);
 
+// Greatest Decrease in Profits/Losses:
+
+var greatestDecrease = 0;
+var greatestDecreaseMonth;
+
+for (var i = 1; i < finances.length; i++) {
+  var change = finances[i][1] - finances[i - 1][1];
+
+  if (change < greatestDecrease) {
+    greatestDecrease = change;
+    greatestDecreaseMonth = finances[i][0];
+  }
+}
+
+console.log("Greatest Decrease in Profits:", greatestDecreaseMonth, greatestDecrease);
+

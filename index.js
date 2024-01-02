@@ -118,3 +118,21 @@ var averageChange = totalChange / (finances.length - 1);
 averageChange = averageChange.toFixed(2)
 
 console.log("Average Change:", averageChange);
+
+
+// Greatest Increase in Profits/Losses:
+
+var greatestIncrease = 0;
+var greatestIncreaseMonth;
+
+for (var i = 1; i < finances.length; i++) {
+  var change = finances[i][1] - finances[i - 1][1];
+
+  if (change > greatestIncrease) {
+    greatestIncrease = change;
+    greatestIncreaseMonth = finances[i][0];
+  }
+}
+
+console.log("Greatest Increase in Profits/Losses:", greatestIncreaseMonth, greatestIncrease);
+
